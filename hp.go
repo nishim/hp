@@ -63,7 +63,8 @@ func (hp *HP) traverseAndOut(node *html.Node) {
 		hp.out(strings.TrimSpace(node.Data))
 	}
 	for _, attr := range node.Attr {
-		if attr.Key == atom.Alt.String() {
+		switch attr.Key {
+		case atom.Alt.String(), atom.Summary.String(), atom.Title.String():
 			hp.out(fmt.Sprintf("%s", attr.Val))
 		}
 	}

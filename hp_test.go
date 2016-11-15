@@ -23,6 +23,8 @@ func TestHP(t *testing.T) {
 		"list element 3",
 		"list element 4",
 		"list element 5",
+		"table summary",
+		"tbody title",
 	}
 
 	hp := &HP{InStream: stdin, OutStream: stdout, ErrStream: stderr}
@@ -56,6 +58,8 @@ func TestHPWithN(t *testing.T) {
 		"7\tlist element 3",
 		"8\tlist element 4",
 		"9\tlist element 5",
+		"10\ttable summary",
+		"11\ttbody title",
 	}
 
 	hp := &HP{InStream: stdin, OutStream: stdout, ErrStream: stderr}

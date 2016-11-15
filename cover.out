@@ -1,0 +1,23 @@
+mode: set
+github.com/nishim/hp/hp.go:27.38,35.46 5 1
+github.com/nishim/hp/hp.go:40.2,42.21 3 1
+github.com/nishim/hp/hp.go:45.2,46.16 2 1
+github.com/nishim/hp/hp.go:51.2,53.19 2 1
+github.com/nishim/hp/hp.go:35.46,37.3 1 0
+github.com/nishim/hp/hp.go:42.21,44.3 1 1
+github.com/nishim/hp/hp.go:46.16,49.3 2 0
+github.com/nishim/hp/hp.go:56.47,58.34 1 1
+github.com/nishim/hp/hp.go:62.2,62.70 1 1
+github.com/nishim/hp/hp.go:65.2,65.33 1 1
+github.com/nishim/hp/hp.go:72.2,72.72 1 1
+github.com/nishim/hp/hp.go:58.34,60.3 1 1
+github.com/nishim/hp/hp.go:62.70,64.3 1 1
+github.com/nishim/hp/hp.go:65.33,66.19 1 1
+github.com/nishim/hp/hp.go:67.3,68.39 1 1
+github.com/nishim/hp/hp.go:72.72,74.3 1 1
+github.com/nishim/hp/hp.go:77.29,78.10 1 1
+github.com/nishim/hp/hp.go:83.2,83.8 1 1
+github.com/nishim/hp/hp.go:78.10,80.3 1 1
+github.com/nishim/hp/hp.go:80.3,82.3 1 1
+github.com/nishim/hp/hp.go:86.37,88.2 1 0
+github.com/nishim/hp/hp.go:90.42,93.2 2 1
