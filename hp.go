@@ -62,6 +62,23 @@ func (hp *HP) traverseAndOut(node *html.Node) {
 	if node.Type == html.TextNode && strings.TrimSpace(node.Data) != "" {
 		hp.out(strings.TrimSpace(node.Data))
 	}
+
+	if node.DataAtom == atom.Meta {
+		var v string
+		var out bool
+		for _, attr := range node.Attr {
+			switch attr.Key {
+			case atom.Name.String():
+				out = attr.Val == "description"
+			case atom.Content.String():
+				v = attr.Val
+			}
+		}
+
+		if out {
+			hp.out(fmt.Sprintf("%s", v))
+		}
+	}
 	for _, attr := range node.Attr {
 		switch attr.Key {
 		case atom.Alt.String(), atom.Summary.String(), atom.Title.String():

@@ -14,6 +14,7 @@ func TestHP(t *testing.T) {
 	stdout, stderr := new(bytes.Buffer), new(bytes.Buffer)
 	args := strings.Split("hp", " ")
 	expected := []string{
+		"meta Description.",
 		"title - HP Test Data",
 		"HP Test Data.",
 		"Extract Pragraphs from HTML.",
@@ -49,17 +50,18 @@ func TestHPWithN(t *testing.T) {
 	stdout, stderr := new(bytes.Buffer), new(bytes.Buffer)
 	args := strings.Split("hp -n", " ")
 	expected := []string{
-		"1\ttitle - HP Test Data",
-		"2\tHP Test Data.",
-		"3\tExtract Pragraphs from HTML.",
-		"4\tsome image",
-		"5\tlist element 1",
-		"6\tlist element 2",
-		"7\tlist element 3",
-		"8\tlist element 4",
-		"9\tlist element 5",
-		"10\ttable summary",
-		"11\ttbody title",
+		"1\tmeta Description.",
+		"2\ttitle - HP Test Data",
+		"3\tHP Test Data.",
+		"4\tExtract Pragraphs from HTML.",
+		"5\tsome image",
+		"6\tlist element 1",
+		"7\tlist element 2",
+		"8\tlist element 3",
+		"9\tlist element 4",
+		"10\tlist element 5",
+		"11\ttable summary",
+		"12\ttbody title",
 	}
 
 	hp := &HP{InStream: stdin, OutStream: stdout, ErrStream: stderr}
