@@ -101,7 +101,7 @@ func (hp *HP) out(s string) {
 }
 
 func (hp *HP) err(a ...interface{}) {
-	fmt.Fprintln(hp.ErrStream, a)
+	fmt.Fprintln(hp.ErrStream, a...)
 }
 
 func removeDecoElements(s string) string {
